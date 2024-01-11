@@ -1,0 +1,6 @@
+curl '127.0.0.1:4000' \
+  -H 'accept: application/json' \
+  -H 'content-type: application/json' \
+  --data-raw '{
+    "query":"query { dog @skip(if: true) { id name } }"
+  }'

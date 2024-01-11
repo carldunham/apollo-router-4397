@@ -1,0 +1,6 @@
+query ($skip: Boolean = false) {
+  dog @skip(if: $skip) {
+    id
+    name
+  }
+}

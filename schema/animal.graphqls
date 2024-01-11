@@ -1,0 +1,12 @@
+schema {
+  query: Query
+}
+
+type Query {
+  dog: Dog
+}
+
+type Dog {
+  id: String!
+  name: String!
+}

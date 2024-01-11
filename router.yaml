@@ -1,0 +1,8 @@
+telemetry:
+  experimental_logging:
+    # format: json
+    when_header:
+      - name: user-agent
+        match: .*
+        headers: false
+        body: true
